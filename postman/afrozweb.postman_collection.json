@@ -14,18 +14,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/languages",
-							"protocol": "http",
+							"raw": "{{host}}languages",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"languages"
+								"{{host}}languages"
 							]
 						}
 					},
@@ -37,18 +28,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/language-data/en",
-							"protocol": "http",
+							"raw": "{{host}}language-data/en",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}language-data"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"language-data",
 								"en"
 							]
 						}
@@ -81,18 +65,9 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/login",
-							"protocol": "http",
+							"raw": "{{host}}login",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"login"
+								"{{host}}login"
 							],
 							"query": [
 								{
@@ -120,7 +95,7 @@
 							"formdata": [
 								{
 									"key": "username",
-									"value": "avatrezaei",
+									"value": "avatrezaei22",
 									"type": "text"
 								},
 								{
@@ -135,12 +110,12 @@
 								},
 								{
 									"key": "email",
-									"value": "avatrezaei888@gmail.com",
+									"value": "avatrezaei8888@gmail.com",
 									"type": "text"
 								},
 								{
 									"key": "mobile",
-									"value": "9913480969",
+									"value": "9913480968",
 									"type": "text"
 								},
 								{
@@ -156,18 +131,9 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/register",
-							"protocol": "http",
+							"raw": "{{host}}register",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"register"
+								"{{host}}register"
 							]
 						}
 					},
@@ -194,18 +160,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/password/verify-code",
-							"protocol": "http",
+							"raw": "{{host}}password/verify-code",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}password"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"password",
 								"verify-code"
 							],
 							"query": [
@@ -241,37 +200,31 @@
 									"key": "email",
 									"value": "avatrezaei88@gmail.com",
 									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "@00d$ife",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "@00d$ife",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "12345",
+									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/password/reset?password=@00d$ife&password_confirmation=@00d$ife&token=12345",
-							"protocol": "http",
+							"raw": "{{host}}password/reset",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}password"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"password",
 								"reset"
-							],
-							"query": [
-								{
-									"key": "password",
-									"value": "@00d$ife"
-								},
-								{
-									"key": "password_confirmation",
-									"value": "@00d$ife"
-								},
-								{
-									"key": "token",
-									"value": "12345"
-								}
 							]
 						}
 					},
@@ -293,18 +246,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/password/email",
-							"protocol": "http",
+							"raw": "{{host}}password/email",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}password"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"password",
 								"email"
 							],
 							"query": [
@@ -331,7 +277,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "3|4sdqUwpXA6wqrmhDj2oCX6B2cAuz11tA1Vavl5Vr",
+									"value": "73|ccqWXYA6R7zPymoETTWIxoz4FNC57GBDsLljjxCa",
 									"type": "string"
 								}
 							]
@@ -339,18 +285,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/users",
-							"protocol": "http",
+							"raw": "{{host}}users",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"users"
+								"{{host}}users"
 							]
 						}
 					},
@@ -372,18 +309,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/users/active",
-							"protocol": "http",
+							"raw": "{{host}}users/active",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}users"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"users",
 								"active"
 							]
 						}
@@ -406,18 +336,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/users/banned",
-							"protocol": "http",
+							"raw": "{{host}}users/banned",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}users"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"users",
 								"banned"
 							]
 						}
@@ -440,18 +363,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/users/sms-unverified",
-							"protocol": "http",
+							"raw": "{{host}}users/sms-unverified",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}users"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"users",
 								"sms-unverified"
 							]
 						}
@@ -508,18 +424,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/users/active/search?search=avat",
-							"protocol": "http",
+							"raw": "{{host}}users/active/search?search=avat",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}users"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"users",
 								"active",
 								"search"
 							],
@@ -549,18 +458,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/user/detail/1",
-							"protocol": "http",
+							"raw": "{{host}}user/detail/1",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}user"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"user",
 								"detail",
 								"1"
 							]
@@ -634,18 +536,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/user/update/1",
-							"protocol": "http",
+							"raw": "{{host}}user/update/1",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}user"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"user",
 								"update",
 								"1"
 							]
@@ -684,18 +579,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/user/send-email/1",
-							"protocol": "http",
+							"raw": "{{host}}user/send-email/1",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}user"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"user",
 								"send-email",
 								"1"
 							]
@@ -734,18 +622,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/users/send-email",
-							"protocol": "http",
+							"raw": "{{host}}users/send-email",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}users"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"users",
 								"send-email"
 							]
 						}
@@ -786,18 +667,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/users/login/history?search=avatrezaei",
-							"protocol": "http",
+							"raw": "{{host}}users/login/history?search=avatrezaei",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}users"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"users",
 								"login",
 								"history"
 							],
@@ -848,18 +722,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/user/profile",
-							"protocol": "http",
+							"raw": "{{host}}user/profile",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}user"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"user",
 								"profile"
 							]
 						}
@@ -887,18 +754,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/ticket",
-							"protocol": "http",
+							"raw": "{{host}}ticket",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"ticket"
+								"{{host}}ticket"
 							]
 						}
 					},
@@ -920,18 +778,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/ticket/view/3",
-							"protocol": "http",
+							"raw": "{{host}}ticket/view/3",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}ticket"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"ticket",
 								"view",
 								"3"
 							]
@@ -970,18 +821,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/ticket/reply/3",
-							"protocol": "http",
+							"raw": "{{host}}ticket/reply/3",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}ticket"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"ticket",
 								"reply",
 								"3"
 							]
@@ -1030,18 +874,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/ticket/create",
-							"protocol": "http",
+							"raw": "{{host}}ticket/create",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}ticket"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"ticket",
 								"create"
 							]
 						}
@@ -1069,18 +906,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/setting",
-							"protocol": "http",
+							"raw": "{{host}}setting",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"setting"
+								"{{host}}setting"
 							]
 						}
 					},
@@ -1127,18 +955,11 @@
 							]
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/setting/update",
-							"protocol": "http",
+							"raw": "{{host}}setting/update",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"{{host}}setting"
 							],
-							"port": "8000",
 							"path": [
-								"api",
-								"setting",
 								"update"
 							]
 						}
@@ -1150,21 +971,22 @@
 		{
 			"name": "setting",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "74|18wmh9XB3aSeG5T580qTmWrvNRlWdedELSR3rY8r",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/setting",
-					"protocol": "http",
+					"raw": "{{host}}setting",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"setting"
+						"{{host}}setting"
 					]
 				}
 			},
@@ -1186,19 +1008,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/user/dashboard",
-					"protocol": "http",
+					"raw": "{{host}}dashboard",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"user",
-						"dashboard"
+						"{{host}}dashboard"
 					]
 				}
 			},
@@ -1220,18 +1032,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/user/logout",
-					"protocol": "http",
+					"raw": "{{host}}user/logout",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{host}}user"
 					],
-					"port": "8000",
 					"path": [
-						"api",
-						"user",
 						"logout"
 					]
 				}
@@ -1254,18 +1059,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/user/authorization",
-					"protocol": "http",
+					"raw": "{{host}}user/authorization",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{host}}user"
 					],
-					"port": "8000",
 					"path": [
-						"api",
-						"user",
 						"authorization"
 					]
 				}
@@ -1288,18 +1086,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/user/resend-verify",
-					"protocol": "http",
+					"raw": "{{host}}user/resend-verify",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{host}}user"
 					],
-					"port": "8000",
 					"path": [
-						"api",
-						"user",
 						"resend-verify"
 					]
 				}
@@ -1332,18 +1123,11 @@
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/user/verify-email",
-					"protocol": "http",
+					"raw": "{{host}}user/verify-email",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{host}}user"
 					],
-					"port": "8000",
 					"path": [
-						"api",
-						"user",
 						"verify-email"
 					]
 				}
@@ -1376,23 +1160,52 @@
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/user/verify-sms",
-					"protocol": "http",
+					"raw": "{{host}}user/verify-sms",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{host}}user"
 					],
-					"port": "8000",
 					"path": [
-						"api",
-						"user",
 						"verify-sms"
 					]
 				}
 			},
 			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "75|HUjqpSx24CgGJ0KRVLB0ngSbyK5nsXlw3JNMcuGa",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "https://avatrezaei.ir/afrozweb/api/"
 		}
 	]
 }
