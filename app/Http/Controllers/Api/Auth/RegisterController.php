@@ -15,16 +15,6 @@ use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Register Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users as well as their
-    | validation and creation. By default this controller uses a trait to
-    | provide this functionality without requiring any additional code.
-    |
-    */
 
     use RegistersUsers;
 
@@ -48,11 +38,6 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        $countryData = (array)json_decode(file_get_contents(resource_path('views/partials/country.json')));
-        $countryCodes = implode(',', array_keys($countryData));
-        $mobileCodes = implode(',',array_column($countryData, 'dial_code'));
-        $countries = implode(',',array_column($countryData, 'country'));
-
         $validate = Validator::make($data, [
             'firstname' => 'sometimes|required|string|max:60',
             'lastname' => 'sometimes|required|string|max:60',
@@ -60,8 +45,6 @@ class RegisterController extends Controller
             'mobile' => 'required|string|max:30|unique:users',
             'password' => 'required|string|min:6|confirmed',
             'username' => 'required|alpha_num|unique:users|min:6',
-            'mobile_code' => 'required|in:'.$mobileCodes,
-            'country' => 'required|in:'.$countries
         ]);
 
         return $validate;
@@ -146,13 +129,6 @@ class RegisterController extends Controller
         $user->ts = 0;
         $user->tv = 1;
         $user->save();
-
-
-        $adminNotification = new AdminNotification();
-        $adminNotification->user_id = $user->id;
-        $adminNotification->title = 'New member registered';
-        $adminNotification->click_url = urlPath('admin.users.detail',$user->id);
-        $adminNotification->save();
 
 
         $info = json_decode(json_encode(getIpInfo()), true);

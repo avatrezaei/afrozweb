@@ -16,10 +16,10 @@ class AllowRegistration
      */
     public function handle($request, Closure $next)
     {
-        if (GeneralSetting::first()->registration == 0) {
-            $notify[] = ['error', 'Registration is currently disabled.'];
-            return back()->withNotify($notify);
-        }
+//        if (GeneralSetting::first()->registration == 0) {
+//            $notify[] = ['error', 'Registration is currently disabled.'];
+//            return back()->withNotify($notify);
+//        }
         return $next($request);
     }
 }
